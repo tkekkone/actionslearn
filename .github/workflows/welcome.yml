@@ -2,6 +2,8 @@ name: Post welcome comment
 on:
   pull_request:
     types: [opened]
+  push:
+    branches: [ main ]
 jobs:
   build:
     environment: [test, dev]
