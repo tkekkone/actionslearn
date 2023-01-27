@@ -10,5 +10,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: "Try env"
-      run: echo ${{ env.VALUE }}
+      run: echo ${{ vars.VALUE }}
 
