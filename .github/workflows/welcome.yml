@@ -4,5 +4,9 @@ on:
     types: [opened]
 jobs:
   build:
-    name: Post welcome comment
+    environment: [test, dev]
     runs-on: ubuntu-latest
+    steps:
+    - name: "Try env"
+      run: echo ${{ env.VALUE }}
+
